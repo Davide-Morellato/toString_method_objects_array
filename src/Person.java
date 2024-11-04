@@ -26,4 +26,22 @@ public class Person {
 
         return objElementsPerson;
     }
+
+
+    /*
+     * 
+     * OGGETTO COME PARAMAETRO DI UN METODO
+     * 
+     */
+    //
+    //dichiaro un metodo a cui passo un oggetto per accesso alle sue proprietà
+    //dichiaro il tipo di funzione in base a cosa deve ritornare (in questo caso niente, quindi void)
+    //nomino il metodo
+    //dichiaro il tipo di dato da passare come parametro (in questo caso è l'oggetto Person) 
+    void greed(Person greedingPerson){
+        //stampo nel terminale
+        //greedingPerson.name => proprietà name dell'oggetto che verrà elaborato come parametro
+        //this.name => proprietà dell'oggetto che ha invocato il metodo greed()
+        System.out.println("Ciao " + greedingPerson.name + " io sono " + this.name);
+    }
 }

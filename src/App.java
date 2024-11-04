@@ -66,5 +66,17 @@ public class App {
         Person[] strangersPeople = {personSeven, personEight};
         System.out.println("Elemento 1 (indice: [0]) array di oggetti strangersPeople: \n" + strangersPeople[0] + "\n" + "Elemento 2 (indice: [1]) array di oggetti strangersPeople: \n" + strangersPeople[1]);
 
+
+        /////////////////////////
+        //
+        //
+        // CREO DUE ISTANZE DELLA CLASSE PERSONA
+        Person personNine = new Person("Matteo", "Verdi", 33);
+        Person personTen = new Person("Davide", "Neri", 35);
+
+        //invoco il metodo greed() passandogli come parametro l'oggetto personTen
+        //greedingPerson.name => Davide -> proprietà name dell'istanza personTen che verrà elaborata come parametro del metodo greed()
+        //this.name => Matteo -> proprietà name dell'istanza che invoca il metodo greed()
+        personNine.greed(personTen);
     }
 }
